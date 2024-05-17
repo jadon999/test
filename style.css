@@ -1,0 +1,35 @@
+img{
+    height: 100vh;
+    width: 100vw;
+    /* display: flex;
+    background-attachment: cover; */
+}
+
+
+.container{
+    height: 320px;
+    width: 280px; 
+    position: relative;
+    /* background-color: blue; */
+   background-image: url("https://img.freepik.com/free-photo/rocket-flying-through-space_23-2150378591.jpg?size=626&ext=jpg&ga=GA1.1.553209589.1714003200&semt=ais");
+    animation-name: transit;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    
+    
+}
+@keyframes transit{
+    0% {
+        top: 400px;
+        left: 600px;
+    }
+    50%{
+        background-color: aqua;
+    }
+    100% {
+        top: -800px;
+        left: 600px;
+        background-color: chartreuse;
+        transform: translateY(-100px);
+    }
+}
